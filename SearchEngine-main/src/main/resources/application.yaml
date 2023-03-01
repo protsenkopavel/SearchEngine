@@ -1,0 +1,45 @@
+server:
+  port: 8082
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/search_engine?useSSL=false
+    username: root
+    password: zaebalPASSWOD1
+    pool-size: 100
+  jpa:
+    driver: com.mysql.cj.jdbc.Driver
+    hibernate:
+      database-platform: org.hibernate.dialect.MySQL5Dialect
+      show-sql: true
+      ddl-auto: update
+
+config:
+  webinterface: /admin
+  agent: SearchEngineBot
+  sites:
+#    - url: https://www.rastr89.ru
+#      name: РАСТР
+#    - url: https://artline89.ru/
+#      name: АртЛайн
+#    - url: https://volochek.life/
+#      name: Городской портал Вышний Волочёк
+#    - url: https://dimonvideo.ru/
+#      name: ДимонВидео
+#    - url: https://et-cetera.ru/mobile/
+#      name: Московский театр «ET CETERA»
+#    - url: http://www.playback.ru/
+#      name: Интернет магазин PlayBack.ru
+#    - url: http://radiomv.ru/
+#      name: Милицейская волна
+#    - url: https://ipfran.ru/
+#      name: Институт прикладной физики Российской академии наук
+    - url: https://nikoartgallery.com
+      name: Галерея Н.Б.Никогосяна
+#    - url:  https://www.lutherancathedral.ru
+#      name: Собор Петра и Павла
+#    - url: https://dombulgakova.ru/
+#      name: Музей театр "Дом Булгакова"
+#    - url: https://www.svetlovka.ru/
+#      name: Молодежная библиотека им. М.А.Светлова
